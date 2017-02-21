@@ -35,6 +35,7 @@ typedef NS_ENUM(NSUInteger, XMGTodayFireVoiceCellState) {
 
 @property(nonatomic, copy) void(^playBlock)(BOOL isPlaying);
 @property(nonatomic, copy) void(^downloadBlock)();
+@property(nonatomic, copy) void(^clickBlock)();
 
 @property (nonatomic, strong) XMGDownLoadVoiceModel *voiceM;
 

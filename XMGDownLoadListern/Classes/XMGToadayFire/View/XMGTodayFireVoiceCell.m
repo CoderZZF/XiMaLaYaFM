@@ -74,48 +74,6 @@ static NSString *const cellID = @"todayFireVoice";
 }
 
 
-//- (void)downLoadStateChange: (NSNotification *)notice {
-//    
-//    NSDictionary *downDic = notice.userInfo;
-//    NSURL *url = downDic[@"downLoadURL"];
-//    
-//    NSURL *currentUrl = [NSURL URLWithString:self.voiceM.playPathAacv164];
-//    
-//    if ([url isEqual:currentUrl]) {
-//        XMGDownLoaderState state = [downDic[@"downLoadState"] integerValue];
-//        
-//        if (state == XMGDownLoaderStateDowning) {
-//            self.state = XMGTodayFireVoiceCellStateDownLoading;
-//        }else if(state == XMGDownLoaderStateSuccess || [XMGDownLoader downLoadedFileWithURL:url].length > 0)
-//        {
-//            self.state = XMGTodayFireVoiceCellStateDownLoaded;
-//        }else {
-//            self.state = XMGTodayFireVoiceCellStateWaitDownLoad;
-//        }
-//    }
-//}
-
-
-//- (void)playStateChange:(NSNotification *)noti {
-//    NSLog(@"%@",noti);
-//    
-//    XMGRemotePlayerState state = [noti.userInfo[@"playState"] integerValue];
-//    NSURL *url = noti.userInfo[@"playURL"];
-//    
-//    NSURL *currentURL = [NSURL URLWithString:self.voiceM.playPathAacv164];
-//    if ([url isEqual:currentURL]) {
-//        // 判断状态
-//        if (state == XMGRemotePlayerStatePlaying) {
-//            self.playOrPauseBtn.selected = YES;
-//        } else {
-//            self.playOrPauseBtn.selected = NO;
-//        }
-//    } else {
-//        self.playOrPauseBtn.selected = NO;
-//    }
-//}
-
-
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
 }
@@ -172,6 +130,10 @@ static NSString *const cellID = @"todayFireVoice";
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
     
+    if (self.clickBlock && selected) {
+        self.clickBlock();
+    }
 }
 @end

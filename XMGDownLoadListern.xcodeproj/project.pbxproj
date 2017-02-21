@@ -13,6 +13,7 @@
 		2BBEEAC31E5C181500963ECE /* XMGRemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEABD1E5C181500963ECE /* XMGRemotePlayer.m */; };
 		2BBEEAC41E5C181500963ECE /* XMGResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEABF1E5C181500963ECE /* XMGResourceLoader.m */; };
 		2BBEEAC81E5C281400963ECE /* XMGTodayFireDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEAC71E5C281400963ECE /* XMGTodayFireDataTool.m */; };
+		2BBEEACC1E5C385300963ECE /* XMGTodayFireVoiceCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEACB1E5C385300963ECE /* XMGTodayFireVoiceCellPresenter.m */; };
 		7BC67F4B1DED096F008D41E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F491DED096F008D41E1 /* Main.storyboard */; };
 		7BC67F4D1DED096F008D41E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F4C1DED096F008D41E1 /* Assets.xcassets */; };
 		7BC67F501DED096F008D41E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F4E1DED096F008D41E1 /* LaunchScreen.storyboard */; };
@@ -58,6 +59,8 @@
 		2BBEEABF1E5C181500963ECE /* XMGResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGResourceLoader.m; sourceTree = "<group>"; };
 		2BBEEAC61E5C281400963ECE /* XMGTodayFireDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTodayFireDataTool.h; sourceTree = "<group>"; };
 		2BBEEAC71E5C281400963ECE /* XMGTodayFireDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTodayFireDataTool.m; sourceTree = "<group>"; };
+		2BBEEACA1E5C385300963ECE /* XMGTodayFireVoiceCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTodayFireVoiceCellPresenter.h; sourceTree = "<group>"; };
+		2BBEEACB1E5C385300963ECE /* XMGTodayFireVoiceCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTodayFireVoiceCellPresenter.m; sourceTree = "<group>"; };
 		6301F510A38B708D03FFC92A /* Pods_XMGDownLoadListern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMGDownLoadListern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC67F3D1DED096F008D41E1 /* XMGDownLoadListern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMGDownLoadListern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC67F4A1DED096F008D41E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,6 +153,15 @@
 				2BBEEAC71E5C281400963ECE /* XMGTodayFireDataTool.m */,
 			);
 			path = DataTool;
+			sourceTree = "<group>";
+		};
+		2BBEEAC91E5C380700963ECE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2BBEEACA1E5C385300963ECE /* XMGTodayFireVoiceCellPresenter.h */,
+				2BBEEACB1E5C385300963ECE /* XMGTodayFireVoiceCellPresenter.m */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		357BAC4EF1BA8BFC5F6C199B /* Pods */ = {
@@ -310,10 +322,11 @@
 		7BC67F891DED17A4008D41E1 /* XMGToadayFire */ = {
 			isa = PBXGroup;
 			children = (
+				7BC67F8A1DED17A4008D41E1 /* Controller */,
 				2BBEEAC51E5C27FB00963ECE /* DataTool */,
+				2BBEEAC91E5C380700963ECE /* Presenter */,
 				7BC67F8B1DED17A4008D41E1 /* Model */,
 				7BC67F8C1DED17A4008D41E1 /* View */,
-				7BC67F8A1DED17A4008D41E1 /* Controller */,
 			);
 			path = XMGToadayFire;
 			sourceTree = "<group>";
@@ -518,6 +531,7 @@
 			files = (
 				7BC67F691DED0A7C008D41E1 /* XMGDownLoadListernMainVC.m in Sources */,
 				2BBEEAC21E5C181500963ECE /* XMGAudioFileTool.m in Sources */,
+				2BBEEACC1E5C385300963ECE /* XMGTodayFireVoiceCellPresenter.m in Sources */,
 				7BC67FA81DED29DB008D41E1 /* UIView+XMGNib.m in Sources */,
 				7BC67F921DED2488008D41E1 /* XMGTodayFireVoiceListTVC.m in Sources */,
 				7BC67F761DED0AD7008D41E1 /* XMGSementBarVC.m in Sources */,
