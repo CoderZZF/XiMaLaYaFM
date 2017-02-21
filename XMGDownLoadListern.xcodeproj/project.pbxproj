@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBEEA501E5C0FBF00963ECE /* XMGNoDownLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEA4E1E5C0FBF00963ECE /* XMGNoDownLoadView.m */; };
+		2BBEEA511E5C0FBF00963ECE /* XMGNoDownLoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBEEA4F1E5C0FBF00963ECE /* XMGNoDownLoadView.xib */; };
+		2BBEEA5A1E5C0FC700963ECE /* XMGDownLoadBaseTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEA531E5C0FC700963ECE /* XMGDownLoadBaseTVC.m */; };
+		2BBEEA5B1E5C0FC700963ECE /* XMGDownLoadAlbumTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEA551E5C0FC700963ECE /* XMGDownLoadAlbumTVC.m */; };
+		2BBEEA5C1E5C0FC700963ECE /* XMGDownLoadedVoiceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEA571E5C0FC700963ECE /* XMGDownLoadedVoiceTVC.m */; };
+		2BBEEA5D1E5C0FC700963ECE /* XMGDownLoadingVoiceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEA591E5C0FC700963ECE /* XMGDownLoadingVoiceTVC.m */; };
 		7BC67F4B1DED096F008D41E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F491DED096F008D41E1 /* Main.storyboard */; };
 		7BC67F4D1DED096F008D41E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F4C1DED096F008D41E1 /* Assets.xcassets */; };
 		7BC67F501DED096F008D41E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F4E1DED096F008D41E1 /* LaunchScreen.storyboard */; };
@@ -20,6 +26,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BBEEA4D1E5C0FBF00963ECE /* XMGNoDownLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNoDownLoadView.h; sourceTree = "<group>"; };
+		2BBEEA4E1E5C0FBF00963ECE /* XMGNoDownLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNoDownLoadView.m; sourceTree = "<group>"; };
+		2BBEEA4F1E5C0FBF00963ECE /* XMGNoDownLoadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGNoDownLoadView.xib; sourceTree = "<group>"; };
+		2BBEEA521E5C0FC700963ECE /* XMGDownLoadBaseTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDownLoadBaseTVC.h; sourceTree = "<group>"; };
+		2BBEEA531E5C0FC700963ECE /* XMGDownLoadBaseTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDownLoadBaseTVC.m; sourceTree = "<group>"; };
+		2BBEEA541E5C0FC700963ECE /* XMGDownLoadAlbumTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDownLoadAlbumTVC.h; sourceTree = "<group>"; };
+		2BBEEA551E5C0FC700963ECE /* XMGDownLoadAlbumTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDownLoadAlbumTVC.m; sourceTree = "<group>"; };
+		2BBEEA561E5C0FC700963ECE /* XMGDownLoadedVoiceTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDownLoadedVoiceTVC.h; sourceTree = "<group>"; };
+		2BBEEA571E5C0FC700963ECE /* XMGDownLoadedVoiceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDownLoadedVoiceTVC.m; sourceTree = "<group>"; };
+		2BBEEA581E5C0FC700963ECE /* XMGDownLoadingVoiceTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDownLoadingVoiceTVC.h; sourceTree = "<group>"; };
+		2BBEEA591E5C0FC700963ECE /* XMGDownLoadingVoiceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDownLoadingVoiceTVC.m; sourceTree = "<group>"; };
 		7BC67F3D1DED096F008D41E1 /* XMGDownLoadListern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMGDownLoadListern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC67F411DED096F008D41E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BC67F4A1DED096F008D41E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,6 +165,14 @@
 			children = (
 				7BC67F671DED0A7C008D41E1 /* XMGDownLoadListernMainVC.h */,
 				7BC67F681DED0A7C008D41E1 /* XMGDownLoadListernMainVC.m */,
+				2BBEEA521E5C0FC700963ECE /* XMGDownLoadBaseTVC.h */,
+				2BBEEA531E5C0FC700963ECE /* XMGDownLoadBaseTVC.m */,
+				2BBEEA541E5C0FC700963ECE /* XMGDownLoadAlbumTVC.h */,
+				2BBEEA551E5C0FC700963ECE /* XMGDownLoadAlbumTVC.m */,
+				2BBEEA561E5C0FC700963ECE /* XMGDownLoadedVoiceTVC.h */,
+				2BBEEA571E5C0FC700963ECE /* XMGDownLoadedVoiceTVC.m */,
+				2BBEEA581E5C0FC700963ECE /* XMGDownLoadingVoiceTVC.h */,
+				2BBEEA591E5C0FC700963ECE /* XMGDownLoadingVoiceTVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +187,9 @@
 		7BC67F631DED09FC008D41E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2BBEEA4D1E5C0FBF00963ECE /* XMGNoDownLoadView.h */,
+				2BBEEA4E1E5C0FBF00963ECE /* XMGNoDownLoadView.m */,
+				2BBEEA4F1E5C0FBF00963ECE /* XMGNoDownLoadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +270,7 @@
 			files = (
 				7BC67F501DED096F008D41E1 /* LaunchScreen.storyboard in Resources */,
 				7BC67F4D1DED096F008D41E1 /* Assets.xcassets in Resources */,
+				2BBEEA511E5C0FBF00963ECE /* XMGNoDownLoadView.xib in Resources */,
 				7BC67F4B1DED096F008D41E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,10 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBEEA5A1E5C0FC700963ECE /* XMGDownLoadBaseTVC.m in Sources */,
 				7BC67F691DED0A7C008D41E1 /* XMGDownLoadListernMainVC.m in Sources */,
 				7BC67F761DED0AD7008D41E1 /* XMGSementBarVC.m in Sources */,
+				2BBEEA5C1E5C0FC700963ECE /* XMGDownLoadedVoiceTVC.m in Sources */,
+				2BBEEA5D1E5C0FC700963ECE /* XMGDownLoadingVoiceTVC.m in Sources */,
+				2BBEEA501E5C0FBF00963ECE /* XMGNoDownLoadView.m in Sources */,
 				7BC67F641DED09FC008D41E1 /* AppDelegate.m in Sources */,
 				7BC67F731DED0AD7008D41E1 /* UIView+XMGSegmentBar.m in Sources */,
+				2BBEEA5B1E5C0FC700963ECE /* XMGDownLoadAlbumTVC.m in Sources */,
 				7BC67F741DED0AD7008D41E1 /* XMGSegmentBar.m in Sources */,
 				7BC67F751DED0AD7008D41E1 /* XMGSegmentBarConfig.m in Sources */,
 				7BC67F771DED0CE8008D41E1 /* main.m in Sources */,

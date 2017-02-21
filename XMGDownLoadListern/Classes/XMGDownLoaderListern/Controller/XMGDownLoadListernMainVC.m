@@ -9,6 +9,10 @@
 #import "XMGDownLoadListernMainVC.h"
 #import "XMGSementBarVC.h"
 
+#import "XMGDownLoadAlbumTVC.h"
+#import "XMGDownLoadedVoiceTVC.h"
+#import "XMGDownLoadingVoiceTVC.h"
+
 
 @interface XMGDownLoadListernMainVC ()
 // 选项卡控制器
@@ -37,12 +41,9 @@
     self.segmentBarVC.view.frame = CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height - 60);
     [self.view addSubview:self.segmentBarVC.view];
     // 添加子控制器
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    vc1.view.backgroundColor = [UIColor brownColor];
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.view.backgroundColor = [UIColor blueColor];
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.view.backgroundColor = [UIColor cyanColor];
+    XMGDownLoadAlbumTVC *vc1 = [[XMGDownLoadAlbumTVC alloc] init];
+    XMGDownLoadedVoiceTVC *vc2 = [[XMGDownLoadedVoiceTVC alloc] init];
+    XMGDownLoadingVoiceTVC *vc3 = [[XMGDownLoadingVoiceTVC alloc] init];
     [self.segmentBarVC setUpWithItems:@[@"专辑", @"声音", @"下载中"] childVCs:@[vc1, vc2, vc3]];
     // 更新选项卡控件的设置.
     [self.segmentBarVC.segmentBar updateWithConfig:^(XMGSegmentBarConfig *config) {
