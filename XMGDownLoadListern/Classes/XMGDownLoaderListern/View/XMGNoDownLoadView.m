@@ -12,8 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *noDataImageView;
 
-@end
 
+@end
 
 @implementation XMGNoDownLoadView
 

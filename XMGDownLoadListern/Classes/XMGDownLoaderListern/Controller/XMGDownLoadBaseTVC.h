@@ -2,21 +2,20 @@
 //  XMGDownLoadBaseTVC.h
 //  XMGDownLoadListern
 //
-//  Created by 小码哥 on 2016/12/4.
+//  Created by 王顺子 on 16/11/29.
 //  Copyright © 2016年 小码哥. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-// 定义block类型
-typedef UITableViewCell *(^GetCellType)(UITableView *tableView, NSIndexPath *indexPath);
-typedef CGFloat(^GetCellHType)(id model);
-typedef void(^BindType)(UITableViewCell *cell, id model);
+typedef UITableViewCell *(^GetCellBlock)(UITableView *tableView, NSIndexPath *indexPath);
+typedef CGFloat (^GetHeightBlock)(id model);
+typedef void (^BindBlock)(UITableViewCell *cell, id model);
+
 
 @interface XMGDownLoadBaseTVC : UITableViewController
 
-// 将具有共性的代码抽离出来,由子控制器决定.
-- (void)setUpWithDatasource: (NSArray *)dataSources getCellBlock: (GetCellType)getCellBlock cellHeight: (GetCellHType)getCellHBlock bindBlock: (BindType)bindBlock;
 
+- (void)setUpWithDataSouce: (NSArray *)dataSource getCell: (GetCellBlock)cellBlock cellHeight: (GetHeightBlock)cellHeightBlock bind: (BindBlock)bindBlock;
 
 @end

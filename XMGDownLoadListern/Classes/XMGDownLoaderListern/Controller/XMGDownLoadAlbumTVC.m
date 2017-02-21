@@ -2,7 +2,7 @@
 //  XMGDownLoadAlbumTVC.m
 //  XMGDownLoadListern
 //
-//  Created by 小码哥 on 2016/12/4.
+//  Created by 王顺子 on 16/11/29.
 //  Copyright © 2016年 小码哥. All rights reserved.
 //
 
@@ -16,30 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
-    [self setUpWithDatasource:@[@"a", @"b", @"c"] getCellBlock:^UITableViewCell *(UITableView *tableView, NSIndexPath *indexPath) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"xxx"];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"xxx"];
-        }
-        return cell;
-        
-    } cellHeight:^CGFloat(id model) {
-        
-        if ([model isEqualToString:@"a"]) {
-            return 30;
-        }else {
-            return 60;
-        }
-        
-    } bindBlock:^(UITableViewCell *cell, NSString *model) {
-        cell.textLabel.text = model;
-    }];
-    
+    // Do any additional setup after loading the view.
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
+/*
+#pragma mark - Navigation
 
-
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
