@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBEEAC01E5C181500963ECE /* NSURL+XMGAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEAB71E5C181500963ECE /* NSURL+XMGAudio.m */; };
+		2BBEEAC11E5C181500963ECE /* XMGAudioDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEAB91E5C181500963ECE /* XMGAudioDownLoader.m */; };
+		2BBEEAC21E5C181500963ECE /* XMGAudioFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEABB1E5C181500963ECE /* XMGAudioFileTool.m */; };
+		2BBEEAC31E5C181500963ECE /* XMGRemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEABD1E5C181500963ECE /* XMGRemotePlayer.m */; };
+		2BBEEAC41E5C181500963ECE /* XMGResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEEABF1E5C181500963ECE /* XMGResourceLoader.m */; };
 		7BC67F4B1DED096F008D41E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F491DED096F008D41E1 /* Main.storyboard */; };
 		7BC67F4D1DED096F008D41E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F4C1DED096F008D41E1 /* Assets.xcassets */; };
 		7BC67F501DED096F008D41E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC67F4E1DED096F008D41E1 /* LaunchScreen.storyboard */; };
@@ -40,6 +45,16 @@
 
 /* Begin PBXFileReference section */
 		286A48A029AAA16DF0B5D3CE /* Pods-XMGDownLoadListern.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMGDownLoadListern.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMGDownLoadListern/Pods-XMGDownLoadListern.debug.xcconfig"; sourceTree = "<group>"; };
+		2BBEEAB61E5C181500963ECE /* NSURL+XMGAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+XMGAudio.h"; sourceTree = "<group>"; };
+		2BBEEAB71E5C181500963ECE /* NSURL+XMGAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+XMGAudio.m"; sourceTree = "<group>"; };
+		2BBEEAB81E5C181500963ECE /* XMGAudioDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAudioDownLoader.h; sourceTree = "<group>"; };
+		2BBEEAB91E5C181500963ECE /* XMGAudioDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAudioDownLoader.m; sourceTree = "<group>"; };
+		2BBEEABA1E5C181500963ECE /* XMGAudioFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAudioFileTool.h; sourceTree = "<group>"; };
+		2BBEEABB1E5C181500963ECE /* XMGAudioFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAudioFileTool.m; sourceTree = "<group>"; };
+		2BBEEABC1E5C181500963ECE /* XMGRemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRemotePlayer.h; sourceTree = "<group>"; };
+		2BBEEABD1E5C181500963ECE /* XMGRemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRemotePlayer.m; sourceTree = "<group>"; };
+		2BBEEABE1E5C181500963ECE /* XMGResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGResourceLoader.h; sourceTree = "<group>"; };
+		2BBEEABF1E5C181500963ECE /* XMGResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGResourceLoader.m; sourceTree = "<group>"; };
 		6301F510A38B708D03FFC92A /* Pods_XMGDownLoadListern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMGDownLoadListern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC67F3D1DED096F008D41E1 /* XMGDownLoadListern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMGDownLoadListern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC67F4A1DED096F008D41E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +123,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BBEEAB51E5C181500963ECE /* XMGRemotePlayerLib */ = {
+			isa = PBXGroup;
+			children = (
+				2BBEEAB61E5C181500963ECE /* NSURL+XMGAudio.h */,
+				2BBEEAB71E5C181500963ECE /* NSURL+XMGAudio.m */,
+				2BBEEAB81E5C181500963ECE /* XMGAudioDownLoader.h */,
+				2BBEEAB91E5C181500963ECE /* XMGAudioDownLoader.m */,
+				2BBEEABA1E5C181500963ECE /* XMGAudioFileTool.h */,
+				2BBEEABB1E5C181500963ECE /* XMGAudioFileTool.m */,
+				2BBEEABC1E5C181500963ECE /* XMGRemotePlayer.h */,
+				2BBEEABD1E5C181500963ECE /* XMGRemotePlayer.m */,
+				2BBEEABE1E5C181500963ECE /* XMGResourceLoader.h */,
+				2BBEEABF1E5C181500963ECE /* XMGResourceLoader.m */,
+			);
+			path = XMGRemotePlayerLib;
+			sourceTree = "<group>";
+		};
 		357BAC4EF1BA8BFC5F6C199B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +218,7 @@
 		7BC67F5A1DED09FC008D41E1 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				2BBEEAB51E5C181500963ECE /* XMGRemotePlayerLib */,
 				D61264C31DF3C5A0004791F3 /* XMGDownLoadLib */,
 				7BC67F6A1DED0AD7008D41E1 /* XMGSegmentBar */,
 			);
@@ -471,13 +504,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC67F691DED0A7C008D41E1 /* XMGDownLoadListernMainVC.m in Sources */,
+				2BBEEAC21E5C181500963ECE /* XMGAudioFileTool.m in Sources */,
 				7BC67FA81DED29DB008D41E1 /* UIView+XMGNib.m in Sources */,
 				7BC67F921DED2488008D41E1 /* XMGTodayFireVoiceListTVC.m in Sources */,
 				7BC67F761DED0AD7008D41E1 /* XMGSementBarVC.m in Sources */,
+				2BBEEAC41E5C181500963ECE /* XMGResourceLoader.m in Sources */,
 				7BC67F641DED09FC008D41E1 /* AppDelegate.m in Sources */,
 				D61264CC1DF3C5A0004791F3 /* NSString+XMGDownLoader.m in Sources */,
 				D61264CF1DF3C5A0004791F3 /* XMGDownLoadManager.m in Sources */,
 				7BC67FA91DED29DB008D41E1 /* XMGSessionManager.m in Sources */,
+				2BBEEAC31E5C181500963ECE /* XMGRemotePlayer.m in Sources */,
+				2BBEEAC01E5C181500963ECE /* NSURL+XMGAudio.m in Sources */,
+				2BBEEAC11E5C181500963ECE /* XMGAudioDownLoader.m in Sources */,
 				7BC67F7A1DED0F23008D41E1 /* XMGDownLoadBaseTVC.m in Sources */,
 				7BC67F9C1DED24C4008D41E1 /* XMGTodayFireVoiceCell.m in Sources */,
 				D61264CD1DF3C5A0004791F3 /* XMGDownLoader.m in Sources */,
