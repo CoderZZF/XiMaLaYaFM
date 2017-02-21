@@ -7,11 +7,7 @@
 //
 
 #import "XMGTodayFireVoiceListTVC.h"
-
-#import "XMGSessionManager.h"
-#import "MJExtension.h"
-#import "XMGDownLoadVoiceModel.h"
-
+#import "XMGTodayFireDataTool.h"
 #import "XMGTodayFireVoiceCell.h"
 
 #import "UIButton+WebCache.h"
@@ -22,11 +18,7 @@
 #define kBaseUrl @"http://mobile.ximalaya.com/"
 
 @interface XMGTodayFireVoiceListTVC ()
-
 @property (nonatomic, strong) NSArray<XMGDownLoadVoiceModel *> *voiceMs;
-
-@property (nonatomic, strong) XMGSessionManager *sessionManager;
-
 @end
 
 @implementation XMGTodayFireVoiceListTVC
@@ -37,37 +29,19 @@
     [self.tableView reloadData];
 }
 
-- (XMGSessionManager *)sessionManager {
-    if (!_sessionManager) {
-        _sessionManager = [[XMGSessionManager alloc] init];
-    }
-    return _sessionManager;
-}
 
 -(void)viewDidLoad
 {
     self.tableView.rowHeight = 80;
     __weak typeof(self) weakSelf = self;
     
-    NSString *url = [NSString stringWithFormat:@"%@%@", kBaseUrl, @"mobile/discovery/v2/rankingList/track"];
-    NSDictionary *param = @{
-                            @"device": @"iPhone",
-                            @"key": self.loadKey,
-                            @"pageId": @"1",
-                            @"pageSize": @"30"
-                            };
-    
-    [self.sessionManager request:RequestTypeGet urlStr:url parameter:param resultBlock:^(id responseObject, NSError *error) {
-        
-        
-        NSMutableArray <XMGDownLoadVoiceModel *>*voiceyMs = [XMGDownLoadVoiceModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        
-        weakSelf.voiceMs = voiceyMs;
-        
+    [[XMGTodayFireDataTool sharedInstance] getVoiceMsWithLoadKey:self.loadKey result:^(NSArray<XMGDownLoadVoiceModel *> *voiceMs) {
+        weakSelf.voiceMs = voiceMs;
     }];
+
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downLoadStateChange:) name:kDownLoadURLOrStateChangeNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playStateChange:) name:kRemotePlayerURLOrStateChangeNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downLoadStateChange:) name:kDownLoadURLOrStateChangeNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playStateChange:) name:kRemotePlayerURLOrStateChangeNotification object:nil];
 }
 
 
