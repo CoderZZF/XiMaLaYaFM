@@ -75,7 +75,7 @@
 @property (nonatomic, assign) NSInteger favoritesCounts;
 
 
-@property (nonatomic, assign) NSInteger sortNum;
+//@property (nonatomic, assign) NSInteger sortNum;
 
 /** 是否已经被下载 */
 //@property (nonatomic, assign) BOOL isDownLoaded;
